@@ -39,8 +39,8 @@ a {
     font-size: 15.9953px;
     line-height: 28px;
     display: flex;
-    align-items: center;
     color: #000000;
+    justify-content: center;
 }
 
 
@@ -270,7 +270,7 @@ a {
     margin-top: 132px;
     padding-left: calc(50% - 609px);
     padding-bottom: 115px;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 }
 
 .meet__line {
@@ -290,6 +290,12 @@ a {
     letter-spacing: 0.275265px;
     text-transform: uppercase;
     color: #000000;
+}
+
+.meet__person {
+    width: 310.55px;
+    height: 458.06px;
+    background: #FF3F40;
 }
 
 .meet__content {
@@ -330,7 +336,8 @@ a {
     margin-top: 58px;
     flex-wrap: wrap;
 }
-.meet__people{
+
+.meet__people {
     display: flex;
     position: relative;
     width: 196px;
@@ -338,10 +345,12 @@ a {
     background: #FF3F40;
     overflow: hidden;
 }
-.meet__people:hover .meet__name-box{
+
+.meet__people:hover .meet__name-box {
     left: 0;
 }
-.meet__person-name{
+
+.meet__person-name {
     font-style: italic;
     font-weight: 600;
     font-size: 18.0762px;
@@ -350,6 +359,7 @@ a {
     color: #FFFFFF;
     text-align: center;
 }
+
 .meet__name-box {
     background: #000000;
     mix-blend-mode: normal;
@@ -371,11 +381,179 @@ a {
     width: 450px;
 }
 
+.text_reverse {
+    color: #FFFFFF;
+}
+
 .meet__text {
     margin-top: 34px;
     margin-bottom: 37px;
 }
 
+.subscribe {
+    padding-top: 151px;
+    padding-bottom: 140px;
+    background: #2d2d2d;
+    text-align: center;
+}
+
+.subscribe__text {
+    margin-top: 16px;
+    margin-bottom: 56px;
+}
+
+.subscribe__input {
+    width: 524px;
+    height: 82px;
+    background-color: #FFF;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #2C2C2C;
+    padding-left: 36px;
+    padding-right: 36px;
+    box-sizing: border-box;
+}
+
+.subscribe__form {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: stretch;
+    /*Алексей: "если убрать то ничего не изменится, стрейч по умолчанию"*/
+}
+
+.subscribe__button {
+    padding-left: 56px;
+    padding-right: 56px;
+    background: #FF2D2D;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.9026px;
+    line-height: 34px;
+    letter-spacing: 0.317046px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    transition: all .3s;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.subscribe__button:hover {
+    background-color: #FFF;
+    color: #FF2D2D;
+    border: 2px solid #FF2D2D;
+}
+
+.heading_reverse {
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+.text_width_750 {
+    width: 750px;
+}
+
+.get {
+    padding-top: 104px;
+    padding-bottom: 107px;
+    padding-left: calc(50% - 1250px / 2);
+}
+
+.get__text {
+    margin-top: 45px;
+    margin-bottom: 58px;
+}
+.get__form{
+    width: 734px;
+    display: grid;
+    grid-column-gap: 52px;
+    grid-row-gap: 43px;
+    grid-template-columns: repeat(2,1fr);
+}
+.get__input {
+    height: 69px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.9134px;
+    line-height: 28px;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    outline: none;
+}
+.get__input-textarea{
+    height: 252px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    resize: none;
+    grid-column: 1 / -1;
+}
+.get__button{
+    background: #FF3B3B;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.317046px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    height: 75px;
+    grid-column: 1 / -1;
+    border: 2px solid transparent;
+    transition: all .3s;
+}
+.get__button:hover{
+    color: #FF3B3B;
+    background-color: #FFF;
+    border: 2px solid #FF3B3B;
+}
+.get__content{
+    display: flex;
+    padding-top: 74px;
+    gap: 104px;
+}
+.get__contacts{
+    background: #2D2D2D;
+    padding-left: 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+.get__heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.317046px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+.get__contact-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    width: 315px;
+}
 
 @media (max-width: 1024px) {
     .top__info {
