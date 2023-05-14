@@ -695,6 +695,10 @@ path {
         background: none;
     }
 
+    .menu {
+        flex-direction: column;
+    }
+
     .nav {
         position: absolute;
         top: 0;
@@ -763,6 +767,7 @@ path {
     .article__menu {
         gap: 32px;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .meet__content {
