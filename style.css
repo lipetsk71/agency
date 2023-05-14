@@ -695,10 +695,6 @@ path {
         background: none;
     }
 
-    .menu {
-        flex-direction: column;
-    }
-
     .nav {
         position: absolute;
         top: 0;
