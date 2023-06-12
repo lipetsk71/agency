@@ -783,6 +783,14 @@ path {
         gap: 11px;
         margin-top: 58px;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .meet__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .meet__people {
